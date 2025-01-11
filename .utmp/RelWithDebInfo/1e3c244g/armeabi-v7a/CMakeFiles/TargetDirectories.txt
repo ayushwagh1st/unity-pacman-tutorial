@@ -1,0 +1,5 @@
+C:/Users/ayush/Downloads/unity-pacman-tutorial/.utmp/RelWithDebInfo/1e3c244g/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/ayush/Downloads/unity-pacman-tutorial/.utmp/RelWithDebInfo/1e3c244g/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/ayush/Downloads/unity-pacman-tutorial/.utmp/RelWithDebInfo/1e3c244g/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/ayush/Downloads/unity-pacman-tutorial/.utmp/RelWithDebInfo/1e3c244g/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/ayush/Downloads/unity-pacman-tutorial/.utmp/RelWithDebInfo/1e3c244g/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

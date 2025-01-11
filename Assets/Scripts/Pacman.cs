@@ -8,12 +8,14 @@ public class Pacman : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private CircleCollider2D circleCollider;
     private Movement movement;
+   
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         circleCollider = GetComponent<CircleCollider2D>();
         movement = GetComponent<Movement>();
+        
     }
 
     private void Update()
