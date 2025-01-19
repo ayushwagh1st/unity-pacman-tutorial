@@ -1,0 +1,1 @@
+E:\unity-pacman-tutorial\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\45t184i1\obj\armeabi-v7a
