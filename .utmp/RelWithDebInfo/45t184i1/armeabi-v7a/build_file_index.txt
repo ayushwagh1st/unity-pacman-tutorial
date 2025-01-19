@@ -1,0 +1,2 @@
+E:\unity-pacman-tutorial\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+E:\unity-pacman-tutorial\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
