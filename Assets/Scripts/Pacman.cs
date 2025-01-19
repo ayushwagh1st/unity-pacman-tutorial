@@ -21,22 +21,70 @@ public class Pacman : MonoBehaviour
     private void Update()
     {
         // Set the new direction based on the current input
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
+        //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
+        //    movement.SetDirection(Vector2.up);
+        //}
+        //else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
+        //    movement.SetDirection(Vector2.down);
+        //}
+        //else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
+        //    movement.SetDirection(Vector2.left);
+        //}
+        //else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+        //    movement.SetDirection(Vector2.right);
+        //}
+
+        //// Rotate pacman to face the movement direction
+        //float angle = Mathf.Atan2(movement.direction.y, movement.direction.x);
+        //transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
+
+
+        // Check for keyboard input
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
             movement.SetDirection(Vector2.up);
         }
-        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
+        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
             movement.SetDirection(Vector2.down);
         }
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
+        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        {
             movement.SetDirection(Vector2.left);
         }
-        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
             movement.SetDirection(Vector2.right);
         }
 
+        // Check for joystick input
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal > 0.1f)
+        {
+            movement.SetDirection(Vector2.right);
+        }
+        else if (horizontal < -0.1f)
+        {
+            movement.SetDirection(Vector2.left);
+        }
+        else if (vertical > 0.1f)
+        {
+            movement.SetDirection(Vector2.up);
+        }
+        else if (vertical < -0.1f)
+        {
+            movement.SetDirection(Vector2.down);
+        }
+
         // Rotate pacman to face the movement direction
-        float angle = Mathf.Atan2(movement.direction.y, movement.direction.x);
-        transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
+        if (movement.direction != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(movement.direction.y, movement.direction.x);
+            transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
+        }
+
     }
 
     public void ResetState()
