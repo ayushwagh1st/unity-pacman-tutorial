@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Pacman.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e0a25a7f4f5a8df4a99793d616043533, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_UseUCBPForAssetBundles: 0
